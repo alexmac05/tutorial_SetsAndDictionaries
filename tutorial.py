@@ -590,13 +590,56 @@ print(results)
 # print(mySet)
 
 
-# Excercise X
-# myList = ['c', 'd', 'c', 'a', 'b', 'c', 'a', 'z', 'd', 'e', 'f', 'f', 'g']
-# myOtherList = ['c', 'c', 'a', 'z', 'p', 'q', ]
-# myListIsNowASet = set(myList)
-# myOtherListIsNowASet = set(myOtherList)
-# intersaction = myListIsNowASet&myOtherListIsNowASet
-# print(intersaction)
+#######################################################################################################################
+#SET OPERATIONS - you can do 'math' with sets!
+#EXAMPLES
+
+#firstSet = {'apples', 'pears', 'bananas', 'peaches', 'grapes', 'figs', 'cherries', 'watermelons'}
+#secondSet = {'pears', 'pomegranates', 'quince', 'peaches', 'figs', 'goosberries', 'pinapples', 'bananas'}
+
+#one of everything from both sets
+#unionSet = firstSet | secondSet
+
+#set of where the two overlap
+#intersectionSet = firstSet & secondSet
+
+#set of the members of first that are not in second
+#differenceSet = firstSet - secondSet
+
+#set of the non-overlapping members
+#symmetricDiffSet = firstSet ^ secondSet
+
+
+#print (unionSet)
+#print (intersectionSet)
+#print (differenceSet)
+#print (symmetricDiffSet)
+
+#######################################################################################################################
+#Exercise 19.5 (bethany)
+Using the two lists below, print the union, intersection, difference and symmetric difference
+
+#import string, random
+#base = string.ascii_lowercase
+#base_II = string.ascii_uppercase
+#first_list = [random.choice((random.choice(base), random.choice(base)*2, random.choice(base_II), random.choice(base_II)*2)) for x in range(50)] 
+#second_list= [random.choice((random.choice(base), random.choice(base)*2, random.choice(base_II), random.choice(base_II)*2)) for x in range(50)] 
+
+#Solution
+#unionSet = {first_list} | {second_list}
+
+#set of where the two overlap
+#intersectionSet = {first_list} & {second_list}
+
+#set of the members of first that are not in second
+#differenceSet = {first_list} - {second_list}
+
+#set of the non-overlapping members
+#symmetricDiffSet = {first_list} ^ {second_list}
+
+#######################################################################################################################
+
+#RESOURCES
 # https://docs.python.org/2/library/stdtypes.html#set
 #######################################################################################################################
 
@@ -792,3 +835,9 @@ phonebook = {
 
 #MARKOV CHAINS and dictionaries
 #http://agiliq.com/blog/2009/06/generating-pseudo-random-text-with-markov-chains-u/
+
+#BOSTON PYTHON PUZZELS
+#http://puzzles.bostonpython.com/
+
+#EXERCISM.IO
+#http://exercism.io
